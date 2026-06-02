@@ -322,3 +322,15 @@ footer {
 }
 
 /*#linkEquipa { color: #004080; font-weight: bold; }*/
+
+.link-uninbe {
+    color: black;
+    text-decoration: none; /* Remove o sublinhado, se quiseres */
+    transition: color 0.3s ease; /* Faz a mudança de cor ser suave */
+  }
+
+  /* Define o que acontece quando o rato passa por cima */
+  .link-uninbe:hover {
+    color: #0056b3; /* Cor que aparece ao passar o rato (podes mudar para a que quiseres!) */
+    text-decoration: underline; /* Opcional: adiciona sublinhado ao passar o rato */
+  }
