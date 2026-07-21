@@ -22,6 +22,7 @@ Angolano">
         <a href="#instituicoes">Parceiros</a>
         <a href="#competencias">Competências</a>
         <a href="javascript:void(0)" id="linkEquipa">Equipa</a>
+        <a href="javascript:void(0)" id="linkCronograma">Cronograma</a>
         <a href="#contacto">Contacto</a>
     </nav>
 </header>
@@ -177,6 +178,9 @@ especialmente quando se trabalha com um grupo diversificado.</p>
 </section>
 
 <div style="text-align: center; margin: 40px 0;">
+    <button id="btnCronograma" style="padding: 12px 24px; font-size: 16px; background-color: #239B56; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; transition: background 0.3s;">
+        📅 Ver Cronograma de Actividades
+    </button>
     <button id="btnEquipa" style="padding: 12px 24px; font-size: 16px; background-color: #004080; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; transition: background 0.3s;">
         Conheça os membros da Equipa do Projecto #FORM#COMP21#ESA
     </button>
@@ -343,8 +347,231 @@ especialmente quando se trabalha com um grupo diversificado.</p>
 
     </tbody>
 </table>
+
 </div>
 </div>
+</div>
+
+<!-- Cronograma -->
+<div id="modalCronograma" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); overflow: auto;">
+    <div style="background-color: white; margin: 3% auto; padding: 25px; border-radius: 10px; width: 94%; max-width: 1450px; position: relative; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
+        <span id="fecharModalCronograma" style="position: absolute; right: 20px; top: 10px; font-size: 28px; font-weight: bold; cursor: pointer; color: #888;">&times;</span>
+        
+        <h2 style="text-align: center; color: #004080; margin-bottom: 5px;">Cronograma de Actividades (Completo)</h2>
+        <p style="text-align: center; font-size: 14px; color: #555; margin-bottom: 20px;">Projecto: Formação para as competências do século 21 no Ensino Superior Angolano | Duração: 24 Meses</p>
+
+        <div style="overflow-x: auto; border-radius: 8px; border: 1px solid #ccc;">
+            <table class="tabela-cronograma" style="width:100%; min-width: 1250px; border-collapse: collapse; text-align: left; font-family: Arial, sans-serif; font-size: 11px; line-height: 1.4;">
+                <thead>
+                    <tr style="background-color: #004080; color: white; font-size: 12px;">
+                        <th rowspan="2" style="padding: 12px; width: 32%;">Actividades / Responsáveis</th>
+                        <th colspan="4" style="text-align: center; background-color: #003366;">2025</th>
+                        <th colspan="11" style="text-align: center; background-color: #1c5286;">2026</th>
+                        <th colspan="8" style="text-align: center; background-color: #003366;">2027</th>
+                    </tr>
+                    <tr style="background-color: #f4f6f9; color: #333; text-align: center; font-size: 9px; font-weight: bold;">
+                        <!-- 2025 -->
+                        <td style="padding: 6px; background-color: #FADBD8; color: #c0392b;">M07</td>
+                        <td style="padding: 6px;">M09</td>
+                        <td style="padding: 6px;">M10</td>
+                        <td style="padding: 6px;">M11</td>
+                        
+                        <!-- 2026 -->
+                        <td style="padding: 6px; background-color: #e8f4f8; color: #2980b9;">M01</td>
+                        <td style="padding: 6px;">M02</td>
+                        <td style="padding: 6px;">M03</td>
+                        <td style="padding: 6px;">M04</td>
+                        <td style="padding: 6px;">M05</td>
+                        <td style="padding: 6px;">M06</td>
+                        <td style="padding: 6px;">M07</td>
+                        <td style="padding: 6px;">M09</td>
+                        <td style="padding: 6px;">M10</td>
+                        <td style="padding: 6px;">M11</td>
+                        <td style="padding: 6px; background-color: #FADBD8; color: #c0392b;">M12</td>
+                        
+                        <!-- 2027 -->
+                        <td style="padding: 6px; background-color: #FADBD8; color: #c0392b;">M01</td>
+                        <td style="padding: 6px;">M02</td>
+                        <td style="padding: 6px;">M03</td>
+                        <td style="padding: 6px;">M04</td>
+                        <td style="padding: 6px;">M05</td>
+                        <td style="padding: 6px;">M06</td>
+                        <td style="padding: 6px; background-color: #e8f4f8;">M07</td>
+                        <td style="padding: 6px; background-color: #FADBD8; color: #c0392b;">M09</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- A1 -->
+                    <tr style="background-color: #ebf5fb; font-weight: bold;">
+                        <td colspan="24" style="padding: 6px 10px; color: #1b4f72;">A1 Coordenação do projecto e divulgação geral<br> Responsável: IP & GP da UNINBE</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 6px 6px 6px 20px; color: #555;">A1.1 Reuniões/encontros presenciais & online</td>
+                        <td style="background-color: #2980b9; color: white; text-align: center; font-size: 8px;">Inicial</td>
+                        <td></td>
+                        <td colspan="2" style="background-color: #2980b9; color: white; text-align: center;">1</td>
+                        <td style="background-color: #2980b9; color: white; text-align: center;">2</td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color: #2980b9; color: white; text-align: center;">3</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td colspan="2" style="background-color: #2980b9; color: white; text-align: center;">4</td>
+                        <td></td><td></td>
+                        <td style="background-color: #2980b9; color: white; text-align: center;">5</td>
+                        <td></td>
+                        <td style="background-color: #2980b9; color: white; text-align: center; font-size: 8px;">Final</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 6px 6px 6px 20px; color: #555;">A1.2 Divulgação global ao longo do projecto</td>
+                        <td colspan="23" style="background-color: #5dade2; color: white; text-align: center; font-style: italic; font-size: 10px;">Execução Contínua em todo o ciclo do Projecto</td>
+                    </tr>
+
+                    <!-- A2 -->
+                    <tr style="background-color: #e8f8f5; font-weight: bold;">
+                        <td colspan="24" style="padding: 6px 10px; color: #0e6251;">A2 Organização e realização de grupos focais e entrevistas<br> Responsável:  Esc. Sup. Pedagógica do Bié (ESPB)</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 6px 6px 6px 20px; color: #555;">A2.1 Uma revisão da literatura sobre as competências em matemática e das suas áreas para o século 21</td>
+                        <td></td>
+                        <td colspan="2" style="background-color: #2ecc71; color: white; text-align: center; font-weight: bold;">✔</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 6px 6px 6px 20px; color: #555;">A2.2 Outra subactividade será a da condução das reuniões do GF e das entrevistas</td>
+                        <td></td><td></td>
+                        <td colspan="2" style="background-color: #27ae60; color: white; text-align: center; font-weight: bold;">✔</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+
+                    <!-- A3 -->
+                    <tr style="background-color: #f2f4f4; font-weight: bold;">
+                        <td colspan="24" style="padding: 6px 10px; color: #424949;">A3 Análise dos resultados dos grupos focais e das entrevistas <span style="font-weight:normal; color:#666;"><br> Responsável:  Fac. de Ciências Naturais da Univ. 
+do Namibe (FCN-UNINBE)</span> </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 6px 6px 6px 20px; color: #555;">A3.1 Análise dos resultados</td>
+                        <td></td><td></td>
+                        <td colspan="2" style="background-color: #797d7f; color: white; text-align: center; font-weight: bold;">✔</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 6px 6px 6px 20px; color: #555; font-weight: bold;">A3.2 Relatório do mapeamento dos conceitos das COMP21</td>
+                        <td></td><td></td><td></td><td></td>
+                        <td style="background-color: #f1c40f; color: #333; text-align: center; font-weight: bold;">E1</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+
+                    <!-- A4 -->
+                    <tr style="background-color: #f2f4f4;">
+                        <td style="padding: 6px 10px; font-weight: bold; color: #424949;">A4 Revisão Bibliográfica <span style="font-weight:normal; color:#666;"><br> Responsável:  Univ. de Trás-os-Montes e Alto Douro (UTAD)</span></td>
+                        <td></td><td></td><td></td><td></td><td></td>
+                        <td style="background-color: #e67e22; color: white; text-align: center; font-weight: bold;">E2</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+
+                    <!-- A5 -->
+                    <tr style="background-color: #fdf2e9; font-weight: bold;">
+                        <td colspan="24" style="padding: 6px 10px; color: #7e5109;">A5 Estruturação, preparação e treino do curso de formação<br> Responsável: FCN-UNINBE</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 6px 6px 6px 20px; color: #555;">A5.1 Estruturar curso de formação para as COMP21</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td colspan="2" style="background-color: #d35400; color: white; text-align: center;">✔</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 6px 6px 6px 20px; color: #555;">A5.2 Treino e autoformação</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td style="background-color: #e67e22; color: white; text-align: center;">✔</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 6px 6px 6px 20px; color: #555; font-weight: bold;">A5.3 Aplicação aos alunos das suas próprias disciplinas</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td style="background-color: #f1c40f; color: #333; text-align: center; font-weight: bold;">E3</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+
+                    <!-- A6 -->
+                    <tr>
+                        <td style="padding: 6px 10px; font-weight: bold; background-color: #fef9e7; color: #7d6608;">A6 Aplicação do curso de formação nas IESA <span style="font-weight:normal; color:#666;">(FCN-UNINBE & ESPB)</span></td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td colspan="5" style="background-color: #f4d03f; color: #333; text-align: center; font-weight: bold;">Formação Ativa</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+
+                    <!-- A7 -->
+                    <tr style="background-color: #eaf2f8; font-weight: bold;">
+                        <td colspan="24" style="padding: 6px 10px; color: #1b4f72;">A7 Relatório do curso de formação (CF) <br> Responsável: FCN-UNINBE & UTAD</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 6px 6px 6px 20px; color: #555;">A7.1 Análise e avaliação dos resultados das aplicações dos CF</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td colspan="2" style="background-color: #3498db; color: white; text-align: center;">✔</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 6px 6px 6px 20px; color: #555;">A7.2 Recolher as opiniões dos docentes e dos alunos</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td colspan="2" style="background-color: #5dade2; color: white; text-align: center;">✔</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 6px 6px 6px 20px; color: #555; font-weight: bold;">A7.3 Redação do relatório do curso de formação</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td style="background-color: #f1c40f; color: #333; text-align: center; font-weight: bold;">E4</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+
+                    <!-- A8 -->
+                    <tr style="background-color: #f5eeeb; font-weight: bold;">
+                        <td colspan="24" style="padding: 6px 10px; color: #512e5f;">A8 Preparação do Encontro Internacional (EIICOMP21-IESA) <br> Responsável: FCN-UNINBE & UTAD</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 6px 6px 6px 20px; color: #555;">A8.1 Preparação logística do EIICOMP21-IESA</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td colspan="4" style="background-color: #9b59b6; color: white; text-align: center;">✔</td>
+                        <td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 6px 6px 6px 20px; color: #555;">A8.2 Convites & preparação científica do EIICOMP21-IESA</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td colspan="4" style="background-color: #af7ac5; color: white; text-align: center;">✔</td>
+                        <td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 6px 6px 6px 20px; color: #555;">A8.3 Preparação das atas do EIICOMP21-IESA</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td colspan="4" style="background-color: #c39bd3; color: white; text-align: center;">✔</td>
+                        <td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+
+                    <!-- A9 -->
+                    <tr>
+                        <td style="padding: 6px 10px; font-weight: bold; background-color: #fef9e7; color: #7d6608;">A9 Ultimar as publicações em preparação <span style="font-weight:normal; color:#666;">(FCN-UNINBE & UTAD)</span></td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td colspan="9" style="background-color: #ffff00; color: #333; text-align: center; font-weight: bold;">Publicações em Curso</td>
+                    </tr>
+
+                    <!-- A10 -->
+                    <tr style="background-color: #eaeeded;">
+                        <td style="padding: 6px 10px; font-weight: bold; color: #2c3e50;">A10 Compilação e redacção das recomendações <span style="font-weight:normal; color:#666;">(FCN-UNINBE & UTAD)</span></td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td colspan="9" style="background-color: #2c3e50; color: #fff; text-align: center; font-weight: bold;">Recomendações Finais <span style="color:#f1c40f;">[E5]</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="margin-top: 15px; padding: 12px; background-color: #f8f9f9; border-radius: 6px; border-left: 4px solid #239B56; font-size: 11px;">
+            <strong style="font-size: 12px; color: #239B56; display: block; margin-bottom: 3px;">📦 Legenda de Entregáveis do Projecto (E1 a E5):</strong>
+            <strong>E1:</strong> Relatório das COMP21 dos empregadores e professores das IESA | 
+            <strong>E2:</strong> Relatório da revisão bibliográfica em matemática | 
+            <strong>E3:</strong> Curso de formação das competências para o século 21 | 
+            <strong>E4:</strong> Relatório do curso de formação das COMP21 | 
+            <strong>E5:</strong> Orientações para a implementação das competências nas IESA.
+        </div>
+    </div>
 </div>
 
 <section class="contactos" id="contacto">

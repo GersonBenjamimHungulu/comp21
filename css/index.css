@@ -334,3 +334,20 @@ footer {
     color: #0056b3; /* Cor que aparece ao passar o rato (podes mudar para a que quiseres!) */
     text-decoration: underline; /* Opcional: adiciona sublinhado ao passar o rato */
   }
+
+  /* Para p cronograma */
+  
+/* ==========================================
+   Estilos para o Modal do Cronograma
+   ========================================== */
+
+/* Força a exibição de bordas claras em todas as células (mesmo as vazias) */
+.tabela-cronograma td, 
+.tabela-cronograma th {
+    border: 1px solid #dcdcdc !important;
+}
+
+/* Destaca a linha inteira quando o utilizador passa o rato por cima */
+.tabela-cronograma tbody tr:hover {
+    background-color: #f1f5f9 !important;
+}
