@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
         --verde-primario: #006853;
         --dourado-mapa: #c5a059;
@@ -358,4 +362,8 @@ footer {
 /* Destaca a linha inteira quando o utilizador passa o rato por cima */
 .tabela-cronograma tbody tr:hover {
     background-color: #f1f5f9 !important;
+}
+
+section {
+  scroll-margin-top: 140px; /* Ajusta este valor para a altura exata do teu cabeçalho */
 }
