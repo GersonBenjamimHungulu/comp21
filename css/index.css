@@ -22,6 +22,11 @@ header {
         justify-content: space-between;
         border-bottom: 4px solid var(--dourado-mapa);
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+        /* Propriedades adicionadas para fixar o cabeçalho ao deslizar */
+        position: sticky;
+        top: 0;
+        z-index: 1000;
         }
 
 .logo-container img {
@@ -63,13 +68,13 @@ nav a {
         box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
 
-footer {
+/*footer {
         text-align: center;
         padding: 20px;
         background: #222;
         color: white;
         font-size: 0.9em;
-        }
+        }*/
 
 .card:hover {
     border-color: var(--azul-barra);
@@ -279,13 +284,6 @@ footer {
     text-decoration: underline;
 }
 
-/*footer {
-    background-color: #222;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 0.9rem;
-}*/
 
 footer {
     background-color: #1a1a1a; /* Um tom ligeiramente mais escuro para o fundo */
@@ -294,6 +292,16 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     border-top: 4px solid var(--dourado-mapa); /* Linha dourada para manter a identidade */
+
+    /* Garante que ocupe de uma ponta à outra do ecrã */
+        /* Força o rodapé a esticar até às bordas da janela mesmo dentro de containers */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
 }
 
 .footer-content p {
